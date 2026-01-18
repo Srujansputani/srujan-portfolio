@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srujan Putani | Embedded & IoT Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #020617;
+      --bg-soft: #0f172a;
+      --primary: #3b82f6;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: radial-gradient(circle at top right, #1e293b, var(--bg));
+      color: var(--text);
+    }
+    nav {
+      position: fixed; top: 0; width: 100%;
+      padding: 18px 60px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(2,6,23,0.75);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+    }
+    nav h2 { font-weight: 800; }
+    nav a {
+      margin-left: 28px; text-decoration: none;
+      color: var(--muted); font-weight: 500;
+    }
+    nav a:hover { color: var(--primary); }
+
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding: 120px 60px 60px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(59,130,246,0.15);
+      color: var(--primary);
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(2.8rem, 6vw, 4.8rem);
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 700px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+    .btn {
+      padding: 14px 30px;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-outline {
+      border: 1px solid #334155;
+      color: var(--text);
+    }
+    section { padding: 100px 60px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: linear-gradient(180deg, #0b1229, #020617);
+      border: 1px solid #1e293b;
+      border-radius: 24px;
+      padding: 30px;
+    }
+    footer {
+      padding: 40px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid #1e293b;
+    }
+    @media (max-width: 768px) {
+      nav { padding: 16px 20px; }
+      .hero { padding: 120px 20px 60px; }
+      section { padding: 80px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h2>Srujan.</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <span class="badge">Open to Opportunities</span>
+    <h1>Embedded & IoT Engineer</h1>
+    <p>
+      Hi, I’m <strong>Srujan Putani</strong>. I design embedded systems and IoT solutions
+      with real-world impact in healthcare and automation.
+    </p>
+    <a href="resume.pdf" download class="btn btn-primary">⬇ Download Resume</a>
+    <a href="#projects" class="btn btn-outline">View Projects</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Former Test & Service Engineer at Sequoia Healthcare Pvt Ltd.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">C, Python, Assembly</div>
+    <div class="card">Arduino, ESP32, Raspberry Pi</div>
+    <div class="card">IoT, EV BMS, Automation</div>
+    <div class="card">YOLOv8, Deep Learning</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">Automatic Irrigation System</div>
+    <div class="card">Smart Trolley with Theft Detection</div>
+    <div class="card">EV Battery Management System</div>
+    <div class="card">Sericulture Automation</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <a href="mailto:srujansputani@gmail.com" class="btn btn-primary">Email Me</a>
+</section>
+
+<footer>
+  © 2026 Srujan Putani
+</footer>
+
+</body>
+</html>
